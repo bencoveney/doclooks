@@ -1,0 +1,11 @@
+{
+  "name": "colors",
+  "version": "1.0.0",
+  "description": "color-theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "node-sass palette.scss palette.css && node-sass palette.scss palette.css"
+  },
+  "author": "",
+  "license": "MIT"
+}

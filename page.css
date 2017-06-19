@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+body > .wrapper {
+	margin: 100px auto;
+	max-width: 1000px;
+	padding: 100px;
+}
+
+.grid {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 10px;
+	margin-bottom: 10px;
+}
+
+.alternate, .main {
+	padding: 10px 10px 20px 10px;
+}
+
+pre {
+	/* White Light */
+	color: #e0cf9f;
+	/* Black Dark */
+	background-color: #171921;
+	padding: 50px;
+	margin-bottom: 10px;
+}
+
+.color-name {
+	font-weight: 700;
+	display: block;
+}
+
+.color-hex {
+	display: block;
+}
+
+.directive {
+	/* Magenta */
+	color: #cf4dba
+}
+
+.syntax {
+	/* Black Lighter */
+	color: #4b516c;
+}
+
+.keyword {
+	/* Blue Light */
+	color: #7579da;
+}
+
+.identifier {
+	/* Azure Light */
+	color: #75b5da;
+}
+
+.literal-string {
+	/* Orange */
+	color: #cf7c4d;
+}
+
+.literal-number {
+	/* Lime Light */
+	color: #a1da75;
+}
+
+.comment {
+	/* Green Dark */
+	color: #31b847;
+}

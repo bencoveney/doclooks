@@ -1,62 +1,62 @@
 .black-background-lighter {
-  background-color: #4b516c; }
+  background-color: #303345; }
 
 .black-background-light {
-  background-color: #363b4e; }
+  background-color: #252836; }
 
 .black-background {
-  background-color: #212430; }
+  background-color: #1b1d27; }
 
 .black-background-dark {
-  background-color: #171921; }
+  background-color: #111218; }
 
 .black-background-darker {
-  background-color: #0c0d12; }
+  background-color: #060709; }
 
 .black-foreground-lighter {
-  color: #4b516c; }
+  color: #303345; }
 
 .black-foreground-light {
-  color: #363b4e; }
+  color: #252836; }
 
 .black-foreground {
-  color: #212430; }
+  color: #1b1d27; }
 
 .black-foreground-dark {
-  color: #171921; }
+  color: #111218; }
 
 .black-foreground-darker {
-  color: #0c0d12; }
+  color: #060709; }
 
 .white-background-lighter {
-  background-color: #f9f6ec; }
+  background-color: #f9f5ec; }
 
 .white-background-light {
-  background-color: #ece2c6; }
+  background-color: #f2ecd9; }
 
 .white-background {
-  background-color: #e0cf9f; }
+  background-color: #ece2c6; }
 
 .white-background-dark {
-  background-color: #dac58c; }
+  background-color: #e6d8b3; }
 
 .white-background-darker {
-  background-color: #d4bc78; }
+  background-color: #dfcfa0; }
 
 .white-foreground-lighter {
-  color: #f9f6ec; }
+  color: #f9f5ec; }
 
 .white-foreground-light {
-  color: #ece2c6; }
+  color: #f2ecd9; }
 
 .white-foreground {
-  color: #e0cf9f; }
+  color: #ece2c6; }
 
 .white-foreground-dark {
-  color: #dac58c; }
+  color: #e6d8b3; }
 
 .white-foreground-darker {
-  color: #d4bc78; }
+  color: #dfcfa0; }
 
 .yellow-background-light {
   background-color: #dad675; }

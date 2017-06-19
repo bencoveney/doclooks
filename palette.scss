@@ -4,8 +4,8 @@ $targets: (
 );
 
 $greyscales: (
-  ('black', #212430),
-  ('white', #e0cf9f),
+  ('black', #1b1d27),
+  ('white', #ece2c6),
 );
 
 @for $i from 1 through length($greyscales) {
@@ -17,11 +17,11 @@ $greyscales: (
     $rule: nth(nth($targets, $j), 2);
 
     .#{$name}-#{$target}-lighter {
-      #{$rule}: lighten($hex, 20%);
+      #{$rule}: lighten($hex, 10%);
     }
 
     .#{$name}-#{$target}-light {
-      #{$rule}: lighten($hex, 10%);
+      #{$rule}: lighten($hex, 5%);
     }
 
     .#{$name}-#{$target} {

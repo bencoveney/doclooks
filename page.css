@@ -22,10 +22,10 @@ body > .wrapper {
 }
 
 pre {
-	/* White Light */
-	color: #e0cf9f;
+	/* White Lighter */
+	color: #f9f5ec;
 	/* Black Dark */
-	background-color: #171921;
+	background-color: #111218;
 	padding: 50px;
 	margin-bottom: 10px;
 }
@@ -45,8 +45,8 @@ pre {
 }
 
 .syntax {
-	/* Black Lighter */
-	color: #4b516c;
+	/* White Darker */
+	color: #dfcfa0;
 }
 
 .keyword {

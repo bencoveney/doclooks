@@ -7,5 +7,13 @@
     "test": "node-sass palette.scss palette.css && node-sass palette.scss palette.css"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/config": "0.0.32",
+    "@types/tinycolor2": "^1.1.1",
+    "config": "^1.26.1",
+    "tinycolor2": "^1.4.1",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4"
+  }
 }

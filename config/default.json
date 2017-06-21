@@ -1,0 +1,46 @@
+{
+	"black": {
+		"r": 27,
+		"g": 29,
+		"b": 39
+	},
+	"grey": {
+		"r": 115,
+		"g": 115,
+		"b": 115
+	},
+	"white": {
+		"r": 217,
+		"g": 206,
+		"b": 150
+	},
+	"baseColor": {
+		"r": 178,
+		"g": 95,
+		"b": 54
+	},
+	"colorShifts": {
+		"orange": 0,
+		"yellow": 0,
+		"lime": 0,
+		"green": 0,
+		"aqua": 0,
+		"azure": 0,
+		"blue": 0,
+		"violet": 0,
+		"magenta": 0,
+		"red": 0
+	},
+	"shades": {
+		"greyscale": {
+			"lighter": 12,
+			"light": 6,
+			"dark": -6,
+			"darker": -12
+		},
+		"color": {
+			"light": 9,
+			"dark": -9,
+		}
+	}
+}

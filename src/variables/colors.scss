@@ -1,0 +1,13 @@
+$shade-1: #D8F2F0 !default;
+$shade-2: #3E8C84 !default;
+$shade-3: #296B73 !default;
+$shade-4: #194759 !default;
+$shade-5: #0F2D40 !default;
+
+$white: #FFFFFF;
+
+$grey-1: desaturate($shade-1, 100%) !default;
+$grey-2: desaturate($shade-2, 100%) !default;
+$grey-3: desaturate($shade-3, 100%) !default;
+$grey-4: desaturate($shade-4, 100%) !default;
+$grey-5: desaturate($shade-5, 100%) !default;

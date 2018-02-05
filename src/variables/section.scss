@@ -1,0 +1,8 @@
+@mixin section-divider {
+  border-bottom: 1px solid $grey-1;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+}

@@ -1,0 +1,22 @@
+.section {
+  @include section-divider;
+
+  &--heading-1 {
+    @include font-block-heading;
+    @include font-h2;
+  }
+
+  &--heading-2 {
+    @include font-block-heading;
+    @include font-h3;
+  }
+
+  &--heading-3 {
+    @include font-block-heading;
+    @include font-h4;
+  }
+
+  &--paragraph {
+    @include font-block-body;
+  }
+}

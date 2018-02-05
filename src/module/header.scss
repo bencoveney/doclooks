@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &--name {
+    @include font-h4;
+    padding: $block-padding;
+    flex: 1 0 auto;
+  }
+
+  &--nav {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--nav-link {
+    padding: $block-padding;
+  }
+}

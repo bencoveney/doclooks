@@ -1,0 +1,12 @@
+.jump-list {
+  @include font-block-body;
+
+  &--heading {
+    @include font-h3;
+    @include font-block-heading;
+  }
+
+  &--item {
+    margin-bottom: 0.5em;
+  }
+}

@@ -133,7 +133,8 @@ body {
   color: #282828; }
 
 a, a:link, a:hover, a:visited, a:active {
-  color: #296B73; }
+  color: #296B73;
+  text-decoration: underline; }
 
 table {
   width: 100%;
@@ -191,6 +192,7 @@ table {
     color: #282828;
     font-size: 3.998rem;
     line-height: 1.2;
+    color: #0F2D40;
     font-size: 2.827rem;
     font-size: 1.999rem;
     margin: 1.414rem 0 0.5em 0;
@@ -206,6 +208,7 @@ table {
   color: #282828;
   font-size: 3.998rem;
   line-height: 1.2;
+  color: #0F2D40;
   margin: 1.414rem 0 0.5em 0;
   display: block;
   border-bottom: 1px solid #e5e5e5;
@@ -220,6 +223,7 @@ table {
     color: #282828;
     font-size: 3.998rem;
     line-height: 1.2;
+    color: #0F2D40;
     margin-top: 0; }
   .title--subheading {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -229,9 +233,12 @@ table {
     color: #282828;
     font-size: 3.998rem;
     line-height: 1.2;
+    color: #0F2D40;
     font-size: 2.827rem;
     font-size: 1.999rem;
     font-size: 1.414rem;
+    color: #194759;
+    font-weight: bold;
     margin: 0 0 1.3em 0;
     display: block;
     font-weight: 700;
@@ -250,9 +257,12 @@ table {
     color: #282828;
     font-size: 3.998rem;
     line-height: 1.2;
+    color: #0F2D40;
     font-size: 2.827rem;
     font-size: 1.999rem;
     font-size: 1.414rem;
+    color: #194759;
+    font-weight: bold;
     padding: 1rem;
     flex: 1 0 auto; }
   .header--nav {
@@ -307,6 +317,7 @@ table {
     color: #282828;
     font-size: 3.998rem;
     line-height: 1.2;
+    color: #0F2D40;
     font-size: 2.827rem; }
   .section--heading-2 {
     margin: 1.414rem 0 0.5em 0;
@@ -318,6 +329,7 @@ table {
     color: #282828;
     font-size: 3.998rem;
     line-height: 1.2;
+    color: #0F2D40;
     font-size: 2.827rem;
     font-size: 1.999rem; }
   .section--heading-3 {
@@ -330,12 +342,104 @@ table {
     color: #282828;
     font-size: 3.998rem;
     line-height: 1.2;
+    color: #0F2D40;
     font-size: 2.827rem;
     font-size: 1.999rem;
-    font-size: 1.414rem; }
+    font-size: 1.414rem;
+    color: #194759;
+    font-weight: bold; }
+  .section--heading-4 {
+    margin: 1.414rem 0 0.5em 0;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.45;
+    font-size: 1rem;
+    color: #282828;
+    font-size: 3.998rem;
+    line-height: 1.2;
+    color: #0F2D40;
+    font-size: 2.827rem;
+    font-size: 1.999rem;
+    font-size: 1.414rem;
+    color: #194759;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #296B73;
+    font-weight: bold; }
+  .section--heading-5 {
+    margin: 1.414rem 0 0.5em 0;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.45;
+    font-size: 1rem;
+    color: #282828;
+    font-size: 3.998rem;
+    line-height: 1.2;
+    color: #0F2D40;
+    font-size: 2.827rem;
+    font-size: 1.999rem;
+    font-size: 1.414rem;
+    color: #194759;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #296B73;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #3E8C84;
+    font-weight: bold; }
+  .section--heading-6 {
+    margin: 1.414rem 0 0.5em 0;
+    display: block; }
   .section--paragraph {
     margin: 0 0 1.3em 0;
     display: block; }
+  .section--italic {
+    font-style: italic; }
+  .section--mark {
+    background-color: #D8F2F0; }
+  .section--code {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.45;
+    font-size: 1rem;
+    color: #282828;
+    font-size: 0.707rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.45;
+    font-size: 1rem;
+    color: #282828;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    padding: 0.1em;
+    background-color: #e5e5e5; }
+  .section--blockquote {
+    margin: 0 0 1.3em 0;
+    display: block;
+    font-size: 1.414rem;
+    color: #3E8C84;
+    padding: 3rem;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    font-style: italic; }
+    .section--blockquote:before {
+      content: " ";
+      border-top: 3px solid #e5e5e5;
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 1px;
+      left: 25%; }
+    .section--blockquote:after {
+      content: " ";
+      border-top: 3px solid #e5e5e5;
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      height: 1px;
+      left: 25%; }
 
 .table {
   margin: 0 0 1.3em 0;
@@ -350,3 +454,19 @@ table {
   .table--cell {
     border-bottom: 1px solid #e5e5e5;
     padding: 0.5rem; }
+
+.unordered-list {
+  margin: 0 0 1.3em 0;
+  display: block;
+  list-style-type: circle;
+  padding-left: 1.4em; }
+  .unordered-list--item {
+    margin-bottom: 0.5rem; }
+  .unordered-list--nested-1 {
+    list-style-type: square;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+  .unordered-list--nested-2 {
+    list-style-type: disc;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }

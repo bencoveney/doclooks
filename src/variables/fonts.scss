@@ -83,21 +83,3 @@ $text-margin-heading: $font-size-large-4 0 0.5em 0 !default;
   color: $shade-2;
   font-weight: bold;
 }
-
-@mixin font-italic {
-  font-style: italic;
-}
-
-@mixin font-mark {
-  background-color: $shade-1;
-}
-
-@mixin font-small {
-  @include font-body;
-  font-size: $font-size-small;
-}
-
-@mixin font-code {
-  @include font-body;
-  font-family: $code-font;
-}

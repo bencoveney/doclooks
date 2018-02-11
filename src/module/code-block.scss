@@ -11,19 +11,7 @@
     content: counter(line);
     display: inline-block;
     margin-right: $block-padding;
-    padding-right: $block-padding / 2;
-    color: $grey-2;
-    border-right: 1px solid $grey-2;
-  }
-}
-
-.code-block-inverted {
-  box-shadow: none;
-  background-color: $grey-4;
-  color: $white;
-
-  &--line-number:before {
-    color: $grey-3;
-    border-right: 1px solid $grey-3;
+    padding-right: $small-block-padding;
+    opacity: 0.4;
   }
 }

@@ -37,7 +37,8 @@ mark {
   background-color: $shade-1;
 }
 
-blockquote {
+blockquote,
+q {
   @include font-block-body;
   font-size: $font-size-large-4;
   color: $shade-2;

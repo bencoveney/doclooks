@@ -1,0 +1,39 @@
+$list-indent: 1.4em;
+$list-item-spacing: $small-block-padding;
+
+ul,
+ol {
+  @include font-block-body;
+
+  padding-left: $list-indent;
+
+  li {
+    margin-bottom: $list-item-spacing;
+  }
+
+  ul,
+  ol {
+    margin-top: $list-item-spacing;
+    margin-bottom: $list-item-spacing;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  ul {
+    list-style-type: square;
+    ul {
+      list-style-type: circle;
+    }
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  ol {
+    list-style-type: lower-roman;
+    ol {
+      list-style-type: lower-alpha;
+    }
+  }
+}

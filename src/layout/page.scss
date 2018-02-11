@@ -33,7 +33,8 @@
     grid-gap: $layout-padding;
   }
 
-  @at-root, .l-content-left {
+  @at-root,
+  .l-content-left {
     &#page {
       grid-template-columns: minmax(auto, $page-width - $sidebar-width) $sidebar-width;
       grid-template-areas: "header header" "content sidebar";

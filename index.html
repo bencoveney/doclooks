@@ -1,11 +1,13 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>DocLooks</title>
+    <link rel="stylesheet" href="./dist/index.css">
     <meta name="description" content="DocLooks CSS Framework">
     <meta name="author" content="Ben Coveney">
-    <link rel="stylesheet" href="./dist/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/demo.js"></script>
   </head>
   <body>
     <div id="page">
@@ -21,8 +23,34 @@
       <div id="content">
         <header class="title">
           <h1 class="title--heading">DocLooks</h1>
-          <small class="title--subheading">Documentation styles</small>
+          <small class="title--subheading">Crystal clear documentation styling</small>
         </header>
+        <section>
+          <h2 class="section--heading-1">About</h2>
+          <p>Providing great documentation is a fundamental part of developing a library, API or tool. Users need easy access to usage instructions or information that is clear and easy to consume. <strong>DocLooks</strong> is a CSS framework designed specifically for documentation. It focuses on:</p>
+          <ul>
+            <li>Clarity</li>
+            <li>Readability</li>
+            <li>Simplicity</li>
+          </ul>
+          <p><strong>DocLooks</strong> uses the SMACSS methodology and features base styles, layouts and modules. It is built using SCSS and includes a range of variables for modifying the appearance.</p>
+        </section>
+        <section>
+          <h2 class="section--heading-1">Modules</h2></h2>
+          <p>Modules are re-usable elements that can be used throughout your page.</p>
+          <h2 class="section--heading-2">Title</h2>
+          <p>A title for the article or page. It can optionally include a tagline to offer more description.</p>
+          <div class="demo">
+            <div class="demo--preview">
+              <header class="title">
+                <h1 class="title--heading">My Title</h1>
+                <small class="title--subheading">
+                  Tagline describing the page or article
+                </small>
+              </header>
+            </div>
+          </div>
+        </section>
         <section class="section">
           <h2 class="section--heading-1">Section</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id odio vulputate, maximus sapien ut, tincidunt turpis. Sed cursus dolor ut neque laoreet porttitor. In lobortis erat sit amet consequat sagittis. Sed molestie aliquet ex accumsan vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut aliquet scelerisque enim at egestas. Nulla cursus venenatis nisl nec dignissim. Suspendisse eleifend lobortis mauris at pulvinar. Etiam rhoncus lectus convallis, lacinia eros ut, rutrum nunc. Fusce maximus finibus dolor, a sollicitudin justo rutrum vitae.</p>
@@ -141,7 +169,7 @@ sum(1, 2, 3);</code></pre>
           </table>
           <h2 class="section--heading-2">Section</h2>
           <p>In consectetur est eros, pharetra lobortis justo interdum sit amet. Pellentesque dictum justo ac vulputate vestibulum. Etiam auctor commodo rutrum. Curabitur laoreet semper nulla, quis ornare quam aliquet a. Nulla vitae imperdiet tellus. Fusce nec libero iaculis sem vehicula faucibus et sed augue. Fusce auctor ullamcorper dolor et cursus. Etiam pellentesque, turpis id dignissim tempor, eros nibh tempus tellus, tristique luctus purus turpis bibendum ligula.</p>
-          <pre class="code-block code-block-inverted"><span class="code-block--line-number">function sum() {</span>
+          <pre class="code-block is-inverted"><span class="code-block--line-number">function sum() {</span>
 <span class="code-block--line-number">  var x = 0;</span>
 <span class="code-block--line-number">  for (var i = 0; i < arguments.length; ++i) {</span>
 <span class="code-block--line-number">    x += arguments[i];</span>
@@ -188,7 +216,7 @@ sum(1, 2, 3);</code></pre>
       </div>
       <nav id="sidebar" class="jump-list">
         <h2 class="jump-list--heading">Jump To</h2>
-        <ul>
+        <ul class="jump-list--list">
           <li class="jump-list--item"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
           <li class="jump-list--item"><a href="#">Aliquam tincidunt mauris eu risus.</a></li>
           <li class="jump-list--item"><a href="#">Vestibulum auctor dapibus neque.</a></li>

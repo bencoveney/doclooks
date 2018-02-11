@@ -5,13 +5,13 @@
   &--heading {
     font-weight: $font-weight-bold;
     border-bottom: 2px solid $grey-1;
-    padding: $block-padding / 2;
+    padding: $small-block-padding;
     color: $font-color-light;
     text-align: left;
   }
 
   &--cell {
     border-bottom: 1px solid $grey-1;
-    padding: $block-padding / 2;
+    padding: $small-block-padding;
   }
 }

@@ -50,6 +50,31 @@
               </header>
             </div>
           </div>
+          <h3>Code Block</h3>
+          <p>A multi-line block of code.</p>
+          <div class="demo">
+            <div class="demo--preview">
+<pre class="code-block"><code>function greet() {
+  console.log("Hello World!");
+}</code></pre>
+            </div>
+          </div>
+          <p>Code blocks can have line numbers using <code>span.code-block--line-number</code>. Not that this example does not use <code>&lt;code&gt;</code> tags.</p>
+          <div class="demo">
+            <div class="demo--preview">
+<pre class="code-block"><span class="code-block--line-number">function greet() {</span>
+<span class="code-block--line-number">  console.log("Hello World!");</span>
+<span class="code-block--line-number">}</span></pre>
+            </div>
+          </div>
+          <p>Code blocks can have an inverted palette using the <code>is-inverted</code> state.</p>
+          <div class="demo">
+            <div class="demo--preview">
+<pre class="code-block is-inverted"><code>function greet() {
+  console.log("Hello World!");
+}</code></pre>
+            </div>
+          </div>
         </section>
         <section class="section">
           <h2>Section</h2>
@@ -75,52 +100,32 @@ sum(1, 2, 3);</code></pre>
 <span class="code-block--line-number">sum(1, 2);</span>
 <span class="code-block--line-number">sum(1, 2, 3);</span></pre>
           <p>Sed eu leo vel leo condimentum molestie. In vel dolor libero. Quisque pharetra nec est quis scelerisque. Etiam eget egestas nunc. Pellentesque velit quam, aliquam non sodales a, suscipit non velit. Sed semper urna nec suscipit vehicula. Sed sit amet vestibulum nisl, quis aliquet odio. Donec tristique eu felis sed pretium.</p>
-          <ul class="unordered-list">
-            <li class="unordered-list--item">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            </li>
-            <li class="unordered-list--item">
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>
               Aliquam tincidunt mauris eu risus.
-              <ul class="unordered-list unordered-list--nested-1">
-                <li class="unordered-list--item">
-                  Praesent placerat risus quis eros.
-                </li>
-                <li class="unordered-list--item">
-                  Fusce pellentesque suscipit nibh.
-                </li>
+              <ul>
+                <li>Praesent placerat risus quis eros.</li>
+                <li>Fusce pellentesque suscipit nibh.</li>
               </ul>
             </li>
-            <li class="unordered-list--item">
-              Vestibulum auctor dapibus neque.
-            </li>
-            <li class="unordered-list--item">
+            <li>Vestibulum auctor dapibus neque.</li>
+            <li>
               Nunc dignissim risus id metus.
-              <ul class="unordered-list unordered-list--nested-1">
-                <li class="unordered-list--item">
-                  Integer vitae libero ac risus egestas placerat.
-                </li>
-                <li class="unordered-list--item">
+              <ul>
+                <li>Integer vitae libero ac risus egestas placerat.</li>
+                <li>
                   Vestibulum commodo felis quis tortor.
-                  <ul class="unordered-list unordered-list--nested-2">
-                      <li class="unordered-list--item">
-                        Cras iaculis ultricies nulla.
-                      </li>
-                      <li class="unordered-list--item">
-                        Donec quis dui at dolor tempor interdum.
-                      </li>
+                  <ul>
+                      <li>Cras iaculis ultricies nulla.</li>
+                      <li>Donec quis dui at dolor tempor interdum.</li>
                   </ul>
                 </li>
-                <li class="unordered-list--item">
-                  Ut aliquam sollicitudin leo.
-                </li>
+                <li>Ut aliquam sollicitudin leo.</li>
               </ul>
             </li>
-            <li class="unordered-list--item">
-              Cras ornare tristique elit.
-            </li>
-            <li class="unordered-list--item">
-              Vivamus vestibulum ntulla nec ante.
-            </li>
+            <li>Cras ornare tristique elit.</li>
+            <li>Vivamus vestibulum ntulla nec ante.</li>
           </ul>
         </section>
         <section class="section">

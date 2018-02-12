@@ -6,6 +6,35 @@ p {
   @include font-block-body;
 }
 
+h1 {
+  @include font-block-heading;
+  @include font-h1;
+}
+
+h2 {
+  @include font-block-heading;
+  @include font-h2;
+}
+
+h3 {
+  @include font-block-heading;
+  @include font-h3;
+}
+
+h4 {
+  @include font-block-heading;
+  @include font-h4;
+}
+
+h5 {
+  @include font-block-heading;
+  @include font-h5;
+}
+
+h6 {
+  @include font-block-heading;
+}
+
 i,
 em {
   font-style: italic;
@@ -36,6 +65,8 @@ pre {
 mark {
   background-color: $shade-1;
 }
+
+
 
 blockquote,
 q {

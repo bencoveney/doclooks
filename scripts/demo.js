@@ -27,11 +27,7 @@ const removeIndentation = text => {
 const createCodeElement = (html) => {
   // Add the content to an inner code element.
   const code = document.createElement("code");
-  code.appendChild(
-    document.createTextNode(
-      removeIndentation(html)
-    )
-  );
+  code.innerHTML = formatTags(removeIndentation(html));
 
   // Add an outer pre wrapper.
   const pre = document.createElement("pre");
@@ -63,6 +59,78 @@ const createPreviewButton = content => {
     );
 
   return button;
+}
+
+const replaceMultiple = (
+  input,
+  regexp,
+  process
+) => {
+  // Build a list of all matches in the input string.
+  // We want a reversed list so that we can replace parts
+  // of the input string without breaking match indices.
+  const allMatches = []
+  let match;
+  while (match = regexp.exec(input)) {
+    allMatches.unshift(match);
+  }
+
+  let result = input;
+  allMatches.forEach((match) => {
+    const location = match.index;
+    const parts = match.slice(1);
+    const length = parts.join("").length;
+    const beforeMatch = result.substring(0, location);
+    const afterMatch = result.substring(location + length);
+    result = beforeMatch + process(parts).join("") + afterMatch;
+  });
+
+  return result;
+};
+
+const color = (input, color) => `<span class="is-syntax-${color}">${input}</span>`;
+
+const formatTags = (text) => {
+  return replaceMultiple(
+    text,
+    /(<)(\/?)(\w*)(\s[^>]*)?(>)/g,
+    (
+      [
+        openingBracket,
+        slash,
+        tagName,
+        tagAttributes,
+        closingBracket
+      ]
+    ) => [
+      color("&lt;", "grey-2"),
+      slash ? color(slash, "grey-2") : "",
+      color(tagName, "shade-2"),
+      replaceMultiple(
+        tagAttributes,
+        /(\w*)(=)(\")([^"]*)(\")/g,
+        (
+          [
+            attributeName,
+            equals,
+            openingQuote,
+            attributeValue,
+            closingQuote
+          ]
+        ) => [
+          color(attributeName, "shade-2"),
+          color(equals, "grey-2"),
+          color(openingQuote, "grey-2"),
+          color(attributeValue, "shade-1"),
+          color(closingQuote, "grey-2")
+        ]
+      ),
+      color("&gt;", "grey-2")
+    ]
+  );
+  //replaceMultiple(text, htmlAttributes, (parts) => parts);
+
+  //return text;
 }
 
 attachPreview = () => selectDomArray(".demo").forEach(

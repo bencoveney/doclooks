@@ -520,3 +520,33 @@ table {
 
 .is-rounded {
   border-radius: 0.5rem; }
+
+.is-syntax-shade-1 {
+  color: #D8F2F0; }
+
+.is-syntax-shade-2 {
+  color: #3E8C84; }
+
+.is-syntax-shade-3 {
+  color: #296B73; }
+
+.is-syntax-shade-4 {
+  color: #194759; }
+
+.is-syntax-shade-5 {
+  color: #0F2D40; }
+
+.is-syntax-grey-1 {
+  color: #e5e5e5; }
+
+.is-syntax-grey-2 {
+  color: #656565; }
+
+.is-syntax-grey-3 {
+  color: #4e4e4e; }
+
+.is-syntax-grey-4 {
+  color: #393939; }
+
+.is-syntax-grey-5 {
+  color: #282828; }

@@ -1,0 +1,31 @@
+blockquote,
+q {
+  @include font-block-body;
+  font-size: $font-size-large-4;
+  color: $shade-2;
+  padding: $layout-padding;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-style: italic;
+
+  &:before {
+    content: " ";
+    border-top: 3px solid $grey-1;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 1px;
+    left: 25%;
+  }
+
+  &:after {
+    content: " ";
+    border-top: 3px solid $grey-1;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 1px;
+    left: 25%;
+  }
+}

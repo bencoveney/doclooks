@@ -122,6 +122,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0.1em;
+  background-color: #e5e5e5; }
+
+pre {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+  pre code {
+    padding: 0;
+    background-color: transparent; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
@@ -132,6 +143,17 @@ body {
 p {
   margin: 0 0 1.3em 0;
   display: block; }
+
+i,
+em {
+  font-style: italic; }
+
+b,
+strong {
+  font-weight: 700; }
+
+mark {
+  background-color: #D8F2F0; }
 
 h1 {
   margin: 1.414rem 0 0.5em 0;
@@ -213,27 +235,42 @@ h6 {
   margin: 1.414rem 0 0.5em 0;
   display: block; }
 
-i,
-em {
-  font-style: italic; }
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #296B73;
+  text-decoration: underline; }
 
-b,
-strong {
-  font-weight: 700; }
+ul,
+ol {
+  margin: 0 0 1.3em 0;
+  display: block;
+  padding-left: 1.4em; }
+  ul li,
+  ol li {
+    margin-bottom: 0.5rem; }
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
 
-code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  padding: 0.1em;
-  background-color: #e5e5e5; }
+ul {
+  list-style-type: disc; }
+  ul ul {
+    list-style-type: square; }
+    ul ul ul {
+      list-style-type: circle; }
 
-pre {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
-  pre code {
-    padding: 0;
-    background-color: transparent; }
-
-mark {
-  background-color: #D8F2F0; }
+ol {
+  list-style-type: decimal; }
+  ol ol {
+    list-style-type: lower-roman; }
+    ol ol ol {
+      list-style-type: lower-alpha; }
 
 blockquote,
 q {
@@ -265,46 +302,9 @@ q {
     height: 1px;
     left: 25%; }
 
-a,
-a:link,
-a:hover,
-a:visited,
-a:active {
-  color: #296B73;
-  text-decoration: underline; }
-
 table {
   width: 100%;
   border-collapse: collapse; }
-
-ul,
-ol {
-  margin: 0 0 1.3em 0;
-  display: block;
-  padding-left: 1.4em; }
-  ul li,
-  ol li {
-    margin-bottom: 0.5rem; }
-  ul ul,
-  ul ol,
-  ol ul,
-  ol ol {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem; }
-
-ul {
-  list-style-type: disc; }
-  ul ul {
-    list-style-type: square; }
-    ul ul ul {
-      list-style-type: circle; }
-
-ol {
-  list-style-type: decimal; }
-  ol ol {
-    list-style-type: lower-roman; }
-    ol ol ol {
-      list-style-type: lower-alpha; }
 
 #page {
   justify-content: center;

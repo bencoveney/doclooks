@@ -6,35 +6,6 @@ p {
   @include font-block-body;
 }
 
-h1 {
-  @include font-block-heading;
-  @include font-h1;
-}
-
-h2 {
-  @include font-block-heading;
-  @include font-h2;
-}
-
-h3 {
-  @include font-block-heading;
-  @include font-h3;
-}
-
-h4 {
-  @include font-block-heading;
-  @include font-h4;
-}
-
-h5 {
-  @include font-block-heading;
-  @include font-h5;
-}
-
-h6 {
-  @include font-block-heading;
-}
-
 i,
 em {
   font-style: italic;
@@ -45,57 +16,6 @@ strong {
   font-weight: $font-weight-bold;
 }
 
-code {
-  font-family: $code-font;
-  padding: 0.1em;
-  background-color: $grey-1;
-}
-
-pre {
-  font-family: $code-font;
-
-  code {
-    // Turn off some of the inline styles.
-    // Is this a SMACSS base violation?
-    padding: 0;
-    background-color: transparent;
-  }
-}
-
 mark {
   background-color: $shade-1;
-}
-
-
-
-blockquote,
-q {
-  @include font-block-body;
-  font-size: $font-size-large-4;
-  color: $shade-2;
-  padding: $layout-padding;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-style: italic;
-
-  &:before {
-    content: " ";
-    border-top: 3px solid $grey-1;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 1px;
-    left: 25%;
-  }
-
-  &:after {
-    content: " ";
-    border-top: 3px solid $grey-1;
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    height: 1px;
-    left: 25%;
-  }
 }

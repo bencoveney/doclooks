@@ -7,10 +7,13 @@
 
 // Base
 @import "base/reset";
+@import "base/code";
 @import "base/font";
+@import "base/heading";
 @import "base/link";
-@import "base/table";
 @import "base/list";
+@import "base/quote";
+@import "base/table";
 
 // Layout
 @import "layout/page";

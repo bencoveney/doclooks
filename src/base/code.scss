@@ -1,0 +1,16 @@
+code {
+  font-family: $code-font;
+  padding: 0.1em;
+  background-color: $grey-1;
+}
+
+pre {
+  font-family: $code-font;
+
+  code {
+    // Turn off some of the inline styles.
+    // Is this a SMACSS base violation?
+    padding: 0;
+    background-color: transparent;
+  }
+}

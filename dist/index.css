@@ -165,7 +165,8 @@ h1 {
   color: #282828;
   font-size: 3.998rem;
   line-height: 1.2;
-  color: #0F2D40; }
+  color: #0F2D40;
+  font-weight: 100; }
 
 h2 {
   margin: 1.414rem 0 0.5em 0;
@@ -178,6 +179,7 @@ h2 {
   font-size: 3.998rem;
   line-height: 1.2;
   color: #0F2D40;
+  font-weight: 100;
   font-size: 2.827rem; }
 
 h3 {
@@ -191,6 +193,7 @@ h3 {
   font-size: 3.998rem;
   line-height: 1.2;
   color: #0F2D40;
+  font-weight: 100;
   font-size: 2.827rem;
   font-size: 1.999rem; }
 
@@ -205,11 +208,11 @@ h4 {
   font-size: 3.998rem;
   line-height: 1.2;
   color: #0F2D40;
+  font-weight: 100;
   font-size: 2.827rem;
   font-size: 1.999rem;
   font-size: 1.414rem;
-  color: #194759;
-  font-weight: bold; }
+  color: #194759; }
 
 h5 {
   margin: 1.414rem 0 0.5em 0;
@@ -222,18 +225,31 @@ h5 {
   font-size: 3.998rem;
   line-height: 1.2;
   color: #0F2D40;
+  font-weight: 100;
   font-size: 2.827rem;
   font-size: 1.999rem;
   font-size: 1.414rem;
   color: #194759;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #296B73;
-  font-weight: bold; }
+  font-size: 1.2rem; }
 
 h6 {
   margin: 1.414rem 0 0.5em 0;
-  display: block; }
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.45;
+  font-size: 1rem;
+  color: #282828;
+  font-size: 3.998rem;
+  line-height: 1.2;
+  color: #0F2D40;
+  font-weight: 100;
+  font-size: 2.827rem;
+  font-size: 1.999rem;
+  font-size: 1.414rem;
+  color: #194759;
+  font-size: 1.2rem;
+  color: #296B73; }
 
 a,
 a:link,
@@ -261,9 +277,9 @@ ol {
 ul {
   list-style-type: disc; }
   ul ul {
-    list-style-type: square; }
+    list-style-type: circle; }
     ul ul ul {
-      list-style-type: circle; }
+      list-style-type: square; }
 
 ol {
   list-style-type: decimal; }
@@ -359,6 +375,7 @@ table {
     font-size: 3.998rem;
     line-height: 1.2;
     color: #0F2D40;
+    font-weight: 100;
     font-size: 2.827rem;
     font-size: 1.999rem;
     margin: 1.414rem 0 0.5em 0;
@@ -378,6 +395,7 @@ table {
   font-size: 3.998rem;
   line-height: 1.2;
   color: #0F2D40;
+  font-weight: 100;
   margin: 1.414rem 0 0.5em 0;
   display: block;
   border-bottom: 1px solid #e5e5e5;
@@ -393,6 +411,7 @@ table {
     font-size: 3.998rem;
     line-height: 1.2;
     color: #0F2D40;
+    font-weight: 100;
     margin: 0; }
   .title--subheading {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -403,11 +422,11 @@ table {
     font-size: 3.998rem;
     line-height: 1.2;
     color: #0F2D40;
+    font-weight: 100;
     font-size: 2.827rem;
     font-size: 1.999rem;
     font-size: 1.414rem;
     color: #194759;
-    font-weight: bold;
     margin: 0 0 1.3em 0;
     display: block;
     font-weight: 700;
@@ -427,11 +446,11 @@ table {
     font-size: 3.998rem;
     line-height: 1.2;
     color: #0F2D40;
+    font-weight: 100;
     font-size: 2.827rem;
     font-size: 1.999rem;
     font-size: 1.414rem;
     color: #194759;
-    font-weight: bold;
     padding: 1rem;
     flex: 1 0 auto;
     margin: 0; }
@@ -449,6 +468,10 @@ table {
 .code-block {
   margin: 0 0 1.3em 0;
   display: block;
+  box-shadow: inset 0 0 10px 0px #BBBBBB;
+  color: #393939;
+  padding: 1rem;
+  counter-reset: line;
   box-shadow: inset 0 0 10px 0px #BBBBBB;
   color: #393939;
   padding: 1rem;
@@ -479,6 +502,13 @@ table {
   .table--cell {
     border-bottom: 1px solid #e5e5e5;
     padding: 0.5rem; }
+  .table--fill {
+    padding: 0;
+    height: 1px;
+    vertical-align: top; }
+    .table--fill > * {
+      margin: 0;
+      height: 100%; }
 
 .demo {
   margin: 0 0 1.3em 0;
@@ -487,13 +517,16 @@ table {
   position: relative; }
   .demo--preview {
     padding: 1rem;
-    margin: 0; }
+    margin: 0;
+    flex: 1 0 auto; }
   .demo--code {
+    /* Should use is-inverted */
     box-shadow: none;
     background-color: #393939;
     color: #FFFFFF;
     border-radius: 0;
-    margin: 0; }
+    margin: 0;
+    flex: 1 0 auto; }
   .demo--button {
     display: block;
     position: absolute;
@@ -512,6 +545,14 @@ table {
       border-bottom: 3px solid #3E8C84; }
     .demo--button:active {
       border-bottom: none; }
+  .demo.is-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; }
+
+.is-close {
+  margin: 0;
+  padding: 0; }
 
 .is-inverted {
   box-shadow: none;

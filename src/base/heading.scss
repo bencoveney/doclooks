@@ -25,4 +25,5 @@ h5 {
 
 h6 {
   @include font-block-heading;
+  @include font-h6;
 }

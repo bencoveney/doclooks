@@ -51,6 +51,7 @@ $text-margin-heading: $font-size-large-4 0 0.5em 0 !default;
   font-size: $font-size-large-1;
   line-height: $line-height-heading;
   color: $shade-5;
+  font-weight: 100;
 }
 
 @mixin font-h2 {
@@ -67,19 +68,14 @@ $text-margin-heading: $font-size-large-4 0 0.5em 0 !default;
   @include font-h3;
   font-size: $font-size-large-4;
   color: $shade-4;
-  font-weight: bold;
 }
 
 @mixin font-h5 {
   @include font-h4;
   font-size: $font-size-large-5;
-  color: $shade-3;
-  font-weight: bold;
 }
 
 @mixin font-h6 {
   @include font-h5;
-  font-size: $font-size-large-6;
-  color: $shade-2;
-  font-weight: bold;
+  color: $shade-3;
 }

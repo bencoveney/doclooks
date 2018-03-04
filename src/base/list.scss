@@ -18,6 +18,20 @@ ol {
   }
 }
 
+dl {
+  @include font-block-body;
+
+  padding-left: $list-indent;
+
+  dd {
+    padding-left: $list-indent;
+  }
+
+  dt {
+    font-style: italic;
+  }
+}
+
 ul {
   list-style-type: disc;
   ul {

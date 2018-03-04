@@ -8,6 +8,7 @@
     <meta name="author" content="Ben Coveney">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./scripts/demo.js"></script>
+    <script src="./scripts/jump-list.js"></script>
   </head>
   <body>
     <div id="page">
@@ -25,7 +26,7 @@
           <h1 class="title--heading">DocLooks</h1>
           <small class="title--subheading">Crystal clear documentation styling</small>
         </header>
-        <section>
+        <section class="section">
           <h2>About</h2>
           <p>Providing great documentation is a fundamental part of developing a library, API or tool. Users need easy access to usage instructions or information that is clear and easy to consume. <strong>DocLooks</strong> is a CSS framework designed specifically for documentation. It focuses on:</p>
           <ul>
@@ -35,11 +36,11 @@
           </ul>
           <p><strong>DocLooks</strong> uses the SMACSS methodology and features base styles, layouts and modules. It is built using SCSS and includes a range of variables for modifying the appearance.</p>
         </section>
-        <section>
+        <section class="section">
           <h2>Base Styles</h2>
           <p>Doclooks applies some styles to all elements without needing to add additional classes or markup.</p>
-          <h3>Text Elements</h3>
-          <p>Blocks of text can be broken up into evenly spaced paragraphs. Common inline elements are supported and appropriately styled.</p>
+          <h3>Text</h3>
+          <p>Doclooks uses a system font string (like GitHub) to ensure text looks its best on all operating systems. Blocks of text can be broken up into evenly spaced paragraphs. Common inline elements are supported and appropriately styled.</p>
           <div class="demo">
             <div class="demo--preview">
               <p>
@@ -112,16 +113,14 @@
           <h3>Lists</h3>
           <p>Lists include support for nesting with three levels of item markers</p>
           <h4>Unordered</h4>
-          <div class="demo is-split">
+          <div class="demo is-horizontal">
             <div class="demo--preview">
               <ul>
                 <li>List item</li>
-                <li>
-                  Nested list
+                <li>Nested list
                   <ul>
                     <li>List item</li>
-                    <li>
-                      Nested list
+                    <li>Nested list
                       <ul><li>List item</li></ul>
                     </li>
                   </ul>
@@ -130,16 +129,14 @@
             </div>
           </div>
           <h4>Ordered</h4>
-          <div class="demo is-split">
+          <div class="demo is-horizontal">
             <div class="demo--preview">
               <ol>
                 <li>List item</li>
-                <li>
-                  Nested list
+                <li>Nested list
                   <ol>
                     <li>List item</li>
-                    <li>
-                      Nested list
+                    <li>Nested list
                       <ol><li>List item</li></ol>
                     </li>
                   </ol>
@@ -174,7 +171,7 @@
             </div>
           </div>
         </section>
-        <section>
+        <section class="section">
           <h2>Modules</h2>
           <p>Modules are re-usable elements that can be used throughout your page.</p>
           <h3>Title</h3>
@@ -190,7 +187,7 @@
             </div>
           </div>
           <h3>Table</h3>
-          <div class="demo is-split">
+          <div class="demo">
             <div class="demo--preview">
               <table class="table">
                 <thead>
@@ -257,19 +254,6 @@
       <nav id="sidebar" class="jump-list">
         <h2 class="jump-list--heading">Jump To</h2>
         <ul class="jump-list--list">
-          <li class="jump-list--item"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-          <li class="jump-list--item"><a href="#">Aliquam tincidunt mauris eu risus.</a></li>
-          <li class="jump-list--item"><a href="#">Vestibulum auctor dapibus neque.</a></li>
-          <li class="jump-list--item"><a href="#">Nunc dignissim risus id metus.</a></li>
-          <li class="jump-list--item"><a href="#">Cras ornare tristique elit.</a></li>
-          <li class="jump-list--item"><a href="#">Vivamus vestibulum ntulla nec ante.</a></li>
-          <li class="jump-list--item"><a href="#">Praesent placerat risus quis eros.</a></li>
-          <li class="jump-list--item"><a href="#">Fusce pellentesque suscipit nibh.</a></li>
-          <li class="jump-list--item"><a href="#">Integer vitae libero ac risus egestas placerat.</a></li>
-          <li class="jump-list--item"><a href="#">Vestibulum commodo felis quis tortor.</a></li>
-          <li class="jump-list--item"><a href="#">Ut aliquam sollicitudin leo.</a></li>
-          <li class="jump-list--item"><a href="#">Cras iaculis ultricies nulla.</a></li>
-          <li class="jump-list--item"><a href="#">Donec quis dui at dolor tempor interdum.</a></li>
         </ul>
       </nav>
     </div>

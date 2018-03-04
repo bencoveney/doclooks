@@ -128,9 +128,6 @@ const formatTags = (text) => {
       color("&gt;", "grey-2")
     ]
   );
-  //replaceMultiple(text, htmlAttributes, (parts) => parts);
-
-  //return text;
 }
 
 attachPreview = () => selectDomArray(".demo").forEach(

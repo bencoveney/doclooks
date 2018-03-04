@@ -351,7 +351,7 @@ table {
 
 #sidebar {
   border-style: solid;
-  border-color: #656565;
+  border-color: #e5e5e5;
   grid-area: sidebar;
   align-self: start; }
 
@@ -390,10 +390,17 @@ table {
     margin: 1.414rem 0 0.5em 0;
     display: block; }
   .jump-list--list {
-    list-style: none;
-    padding: 0; }
-  .jump-list--item {
-    margin-bottom: 0.5em; }
+    list-style-type: none;
+    padding-left: 0; }
+  .jump-list--link {
+    border-left-width: 2px;
+    border-left-style: solid;
+    padding-left: 0.5rem;
+    border-left-color: #3E8C84; }
+  .jump-list--item > .jump-list--list {
+    padding-left: 1rem; }
+  .jump-list--list .jump-list--list .jump-list--link {
+    border-left-color: #D8F2F0; }
 
 .title {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

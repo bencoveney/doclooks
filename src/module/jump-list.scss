@@ -7,11 +7,24 @@
   }
 
   &--list {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    padding-left: 0;
   }
 
-  &--item {
-    margin-bottom: 0.5em;
+  &--link {
+    border-left-width: 2px;
+    border-left-style: solid;
+    padding-left: 0.5rem;
+    border-left-color: $shade-2;
+  }
+
+  // Add indentation to nested lists.
+  &--item > &--list {
+    padding-left: 1rem;
+  }
+
+  // Nested links get a different color.
+  &--list &--list &--link {
+    border-left-color: $shade-1;
   }
 }

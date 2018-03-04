@@ -13,9 +13,7 @@ CSS framework for documentation using SMACSS.
 ## TODO
 
 - Fix seperators. Header, Article > Section
-- Simplify jump-list
 - Table as base styles
-- Generate jump-list
 
 ## Inspiration
 

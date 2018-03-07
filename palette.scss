@@ -1,0 +1,75 @@
+$targets: (
+  ('background', 'background-color'),
+  ('foreground', 'color'),
+);
+
+$greyscales: (
+  ('black', #1b1d27),
+  ('white', #ece2c6),
+);
+
+@for $i from 1 through length($greyscales) {
+  $name: nth(nth($greyscales, $i), 1);
+  $hex: nth(nth($greyscales, $i), 2);
+
+  @for $j from 1 through length($targets) {
+    $target: nth(nth($targets, $j), 1);
+    $rule: nth(nth($targets, $j), 2);
+
+    .#{$name}-#{$target}-lighter {
+      #{$rule}: lighten($hex, 10%);
+    }
+
+    .#{$name}-#{$target}-light {
+      #{$rule}: lighten($hex, 5%);
+    }
+
+    .#{$name}-#{$target} {
+      #{$rule}: $hex;
+    }
+
+    .#{$name}-#{$target}-dark {
+      #{$rule}: darken($hex, 5%);
+    }
+
+    .#{$name}-#{$target}-darker {
+      #{$rule}: darken($hex, 10%);
+    }
+  }
+}
+
+$colors: (
+  'yellow',
+  'lime',
+  'green',
+  'aqua',
+  'azure',
+  'blue',
+  'violet',
+  'magenta',
+  'red',
+  'orange'
+);
+$color-base: #b86231;
+$hue-multiplier: 360% / length($colors);
+@for $i from 1 through length($colors) {
+  $name: nth($colors, $i);
+  $hex: adjust-hue($color-base, $i * $hue-multiplier);
+
+  @for $j from 1 through length($targets) {
+    $target: nth(nth($targets, $j), 1);
+    $rule: nth(nth($targets, $j), 2);
+
+    .#{$name}-#{$target}-light {
+      #{$rule}: lighten($hex, 20%);
+    }
+
+    .#{$name}-#{$target} {
+      #{$rule}: lighten($hex, 10%);
+    }
+
+    .#{$name}-#{$target}-dark {
+      #{$rule}: $hex;
+    }
+  }
+}

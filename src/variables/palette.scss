@@ -1,0 +1,85 @@
+// This file is for generating the color palette.
+
+// Greyscale colours and the associated shades.
+$greyscales: (
+  ('black', #1b1d27),
+  ('white', #ece2c6),
+);
+$greyscale-shades: (
+  ('lighter', 10%),
+  ('light', 5%),
+  ('dark', 5%),
+  ('darker', 10%)
+);
+
+// Generation of colours and the associated shades.
+$color-base: #b86231;
+$hue-multiplier: 360% / 10;
+$rainbow: (
+  ('yellow', adjust-hue($color-base, 1 * $hue-multiplier)),
+  ('lime', adjust-hue($color-base, 2 * $hue-multiplier)),
+  ('green', adjust-hue($color-base, 3 * $hue-multiplier)),
+  ('aqua', adjust-hue($color-base, 4 * $hue-multiplier)),
+  ('azure', adjust-hue($color-base, 5 * $hue-multiplier)),
+  ('blue', adjust-hue($color-base, 6 * $hue-multiplier)),
+  ('violet', adjust-hue($color-base, 7 * $hue-multiplier)),
+  ('magenta', adjust-hue($color-base, 8 * $hue-multiplier)),
+  ('red', adjust-hue($color-base, 9 * $hue-multiplier)),
+  ('orange' adjust-hue($color-base, 10 * $hue-multiplier))
+);
+$rainbow-shades: (
+  ('light', 20%),
+  ('default', 10%),
+  ('dark', 0%),
+);
+
+// For convenience we want variables to use in the code. Unforunately sass doesn't give us many
+// options for defining these (maps might be *okay*), hence the code is pretty copy-pastey. :(
+
+$black-lighter: lighten(map-get($greyscales, 'black'), map-get($greyscale-shades, 'lighter')) !default;
+$black-light: lighten(map-get($greyscales, 'black'), map-get($greyscale-shades, 'light')) !default;
+$black: map-get($greyscales, 'black') !default;
+$black-dark: darken(map-get($greyscales, 'black'), map-get($greyscale-shades, 'dark')) !default;
+$black-darker: darken(map-get($greyscales, 'black'), map-get($greyscale-shades, 'darker')) !default;
+
+$white-lighter: lighten(map-get($greyscales, 'white'), map-get($greyscale-shades, 'lighter')) !default;
+$white-light: lighten(map-get($greyscales, 'white'), map-get($greyscale-shades, 'light')) !default;
+$white: map-get($greyscales, 'white') !default;
+$white-dark: darken(map-get($greyscales, 'white'), map-get($greyscale-shades, 'dark')) !default;
+$white-darker: darken(map-get($greyscales, 'white'), map-get($greyscale-shades, 'darker')) !default;
+
+$yellow-light: lighten(map-get($rainbow, 'yellow'), map-get($rainbow-shades, 'light')) !default;
+$yellow: lighten(map-get($rainbow, 'yellow'), map-get($rainbow-shades, 'default')) !default;
+$yellow-dark: lighten(map-get($rainbow, 'yellow'), map-get($rainbow-shades, 'dark')) !default;
+
+$lime-light: lighten(map-get($rainbow, 'lime'), map-get($rainbow-shades, 'light')) !default;
+$lime: lighten(map-get($rainbow, 'lime'), map-get($rainbow-shades, 'default')) !default;
+$lime-dark: lighten(map-get($rainbow, 'lime'), map-get($rainbow-shades, 'dark')) !default;
+
+$green-light: lighten(map-get($rainbow, 'green'), map-get($rainbow-shades, 'light')) !default;
+$green: lighten(map-get($rainbow, 'green'), map-get($rainbow-shades, 'default')) !default;
+$green-dark: lighten(map-get($rainbow, 'green'), map-get($rainbow-shades, 'dark')) !default;
+
+$aqua-light: lighten(map-get($rainbow, 'aqua'), map-get($rainbow-shades, 'light')) !default;
+$aqua: lighten(map-get($rainbow, 'aqua'), map-get($rainbow-shades, 'default')) !default;
+$aqua-dark: lighten(map-get($rainbow, 'aqua'), map-get($rainbow-shades, 'dark')) !default;
+
+$azure-light: lighten(map-get($rainbow, 'azure'), map-get($rainbow-shades, 'light')) !default;
+$azure: lighten(map-get($rainbow, 'azure'), map-get($rainbow-shades, 'default')) !default;
+$azure-dark: lighten(map-get($rainbow, 'azure'), map-get($rainbow-shades, 'dark')) !default;
+
+$violet-light: lighten(map-get($rainbow, 'violet'), map-get($rainbow-shades, 'light')) !default;
+$violet: lighten(map-get($rainbow, 'violet'), map-get($rainbow-shades, 'default')) !default;
+$violet-dark: lighten(map-get($rainbow, 'violet'), map-get($rainbow-shades, 'dark')) !default;
+
+$magenta-light: lighten(map-get($rainbow, 'magenta'), map-get($rainbow-shades, 'light')) !default;
+$magenta: lighten(map-get($rainbow, 'magenta'), map-get($rainbow-shades, 'default')) !default;
+$magenta-dark: lighten(map-get($rainbow, 'magenta'), map-get($rainbow-shades, 'dark')) !default;
+
+$red-light: lighten(map-get($rainbow, 'red'), map-get($rainbow-shades, 'light')) !default;
+$red: lighten(map-get($rainbow, 'red'), map-get($rainbow-shades, 'default')) !default;
+$red-dark: lighten(map-get($rainbow, 'red'), map-get($rainbow-shades, 'dark')) !default;
+
+$orange-light: lighten(map-get($rainbow, 'orange'), map-get($rainbow-shades, 'light')) !default;
+$orange: lighten(map-get($rainbow, 'orange'), map-get($rainbow-shades, 'default')) !default;
+$orange-dark: lighten(map-get($rainbow, 'orange'), map-get($rainbow-shades, 'dark')) !default;

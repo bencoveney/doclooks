@@ -6,6 +6,9 @@ code {
 
 pre {
   font-family: $code-font;
+  background-color: $black-dark;
+  padding: $block-padding;
+  counter-reset: line;
 
   code {
     // Turn off some of the inline styles.
@@ -13,10 +16,4 @@ pre {
     padding: 0;
     background-color: transparent;
   }
-}
-
-@mixin code() {
-  padding: $block-padding;
-  counter-reset: line;
-  background-color: $black-dark;
 }

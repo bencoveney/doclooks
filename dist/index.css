@@ -136,7 +136,10 @@ code {
   background-color: #252836; }
 
 pre {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  background-color: #111218;
+  padding: 1rem;
+  counter-reset: line; }
   pre code {
     padding: 0;
     background-color: transparent; }
@@ -479,9 +482,6 @@ table {
 .code-block {
   margin: 0 0 1.3em 0;
   display: block;
-  padding: 1rem;
-  counter-reset: line;
-  background-color: #111218;
   padding: 1rem;
   counter-reset: line; }
   .code-block--line-number:before {

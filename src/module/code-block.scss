@@ -1,6 +1,5 @@
 .code-block {
   @include font-block-body;
-  @include code;
   padding: $block-padding;
   counter-reset: line;
 

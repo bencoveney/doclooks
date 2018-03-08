@@ -13,7 +13,7 @@
 #header {
   width: 100%;
   grid-area: header;
-  background-color: $grey-1;
+  background-color: $black-light;
 }
 
 #content {
@@ -22,7 +22,7 @@
 
 #sidebar {
   border-style: solid;
-  border-color: $grey-1;
+  border-color: $black-lighter;
   grid-area: sidebar;
   align-self: start;
 }

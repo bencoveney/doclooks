@@ -122,23 +122,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.45;
+  font-size: 1rem;
+  color: #ece2c6;
+  background-color: #1b1d27; }
+
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   padding: 0.1em;
-  background-color: #e5e5e5; }
+  background-color: #252836; }
 
 pre {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
   pre code {
     padding: 0;
     background-color: transparent; }
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 400;
-  line-height: 1.45;
-  font-size: 1rem;
-  color: #282828; }
 
 p {
   margin: 0 0 1.3em 0;
@@ -153,7 +154,7 @@ strong {
   font-weight: 700; }
 
 mark {
-  background-color: #D8F2F0; }
+  background-color: #303345; }
 
 h1 {
   margin: 1.414rem 0 0.5em 0;
@@ -162,10 +163,10 @@ h1 {
   font-weight: 400;
   line-height: 1.45;
   font-size: 1rem;
-  color: #282828;
+  color: #ece2c6;
   font-size: 3.998rem;
   line-height: 1.2;
-  color: #0F2D40;
+  color: #f9f5ec;
   font-weight: 100; }
 
 h2 {
@@ -175,10 +176,10 @@ h2 {
   font-weight: 400;
   line-height: 1.45;
   font-size: 1rem;
-  color: #282828;
+  color: #ece2c6;
   font-size: 3.998rem;
   line-height: 1.2;
-  color: #0F2D40;
+  color: #f9f5ec;
   font-weight: 100;
   font-size: 2.827rem; }
 
@@ -189,10 +190,10 @@ h3 {
   font-weight: 400;
   line-height: 1.45;
   font-size: 1rem;
-  color: #282828;
+  color: #ece2c6;
   font-size: 3.998rem;
   line-height: 1.2;
-  color: #0F2D40;
+  color: #f9f5ec;
   font-weight: 100;
   font-size: 2.827rem;
   font-size: 1.999rem; }
@@ -204,15 +205,14 @@ h4 {
   font-weight: 400;
   line-height: 1.45;
   font-size: 1rem;
-  color: #282828;
+  color: #ece2c6;
   font-size: 3.998rem;
   line-height: 1.2;
-  color: #0F2D40;
+  color: #f9f5ec;
   font-weight: 100;
   font-size: 2.827rem;
   font-size: 1.999rem;
-  font-size: 1.414rem;
-  color: #194759; }
+  font-size: 1.414rem; }
 
 h5 {
   margin: 1.414rem 0 0.5em 0;
@@ -221,15 +221,14 @@ h5 {
   font-weight: 400;
   line-height: 1.45;
   font-size: 1rem;
-  color: #282828;
+  color: #ece2c6;
   font-size: 3.998rem;
   line-height: 1.2;
-  color: #0F2D40;
+  color: #f9f5ec;
   font-weight: 100;
   font-size: 2.827rem;
   font-size: 1.999rem;
   font-size: 1.414rem;
-  color: #194759;
   font-size: 1.2rem; }
 
 h6 {
@@ -239,24 +238,22 @@ h6 {
   font-weight: 400;
   line-height: 1.45;
   font-size: 1rem;
-  color: #282828;
+  color: #ece2c6;
   font-size: 3.998rem;
   line-height: 1.2;
-  color: #0F2D40;
+  color: #f9f5ec;
   font-weight: 100;
   font-size: 2.827rem;
   font-size: 1.999rem;
   font-size: 1.414rem;
-  color: #194759;
-  font-size: 1.2rem;
-  color: #296B73; }
+  font-size: 1.2rem; }
 
 a,
 a:link,
 a:hover,
 a:visited,
 a:active {
-  color: #296B73;
+  color: #4da0cf;
   text-decoration: underline; }
 
 ul,
@@ -302,7 +299,7 @@ q {
   margin: 0 0 1.3em 0;
   display: block;
   font-size: 1.414rem;
-  color: #3E8C84;
+  color: #f9f5ec;
   padding: 3rem;
   text-align: center;
   display: inline-block;
@@ -311,7 +308,7 @@ q {
   blockquote:before,
   q:before {
     content: " ";
-    border-top: 3px solid #e5e5e5;
+    border-top: 3px solid #4d51cf;
     position: absolute;
     top: 0;
     width: 50%;
@@ -320,7 +317,7 @@ q {
   blockquote:after,
   q:after {
     content: " ";
-    border-top: 3px solid #e5e5e5;
+    border-top: 3px solid #4d51cf;
     position: absolute;
     bottom: 0;
     width: 50%;
@@ -344,14 +341,14 @@ table {
 #header {
   width: 100%;
   grid-area: header;
-  background-color: #e5e5e5; }
+  background-color: #252836; }
 
 #content {
   grid-area: content; }
 
 #sidebar {
   border-style: solid;
-  border-color: #e5e5e5;
+  border-color: #303345;
   grid-area: sidebar;
   align-self: start; }
 
@@ -380,10 +377,10 @@ table {
     font-weight: 400;
     line-height: 1.45;
     font-size: 1rem;
-    color: #282828;
+    color: #ece2c6;
     font-size: 3.998rem;
     line-height: 1.2;
-    color: #0F2D40;
+    color: #f9f5ec;
     font-weight: 100;
     font-size: 2.827rem;
     font-size: 1.999rem;
@@ -396,25 +393,25 @@ table {
     border-left-width: 2px;
     border-left-style: solid;
     padding-left: 0.5rem;
-    border-left-color: #3E8C84; }
+    border-left-color: #303345; }
   .jump-list--item > .jump-list--list {
     padding-left: 1rem; }
   .jump-list--list .jump-list--list .jump-list--link {
-    border-left-color: #D8F2F0; }
+    border-left-color: #252836; }
 
 .title {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   line-height: 1.45;
   font-size: 1rem;
-  color: #282828;
+  color: #ece2c6;
   font-size: 3.998rem;
   line-height: 1.2;
-  color: #0F2D40;
+  color: #f9f5ec;
   font-weight: 100;
   margin: 1.414rem 0 0.5em 0;
   display: block;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #252836;
   margin-top: 0; }
   .title:last-child {
     border-bottom: 0; }
@@ -423,10 +420,10 @@ table {
     font-weight: 400;
     line-height: 1.45;
     font-size: 1rem;
-    color: #282828;
+    color: #ece2c6;
     font-size: 3.998rem;
     line-height: 1.2;
-    color: #0F2D40;
+    color: #f9f5ec;
     font-weight: 100;
     margin: 0; }
   .title--subheading {
@@ -434,19 +431,18 @@ table {
     font-weight: 400;
     line-height: 1.45;
     font-size: 1rem;
-    color: #282828;
+    color: #ece2c6;
     font-size: 3.998rem;
     line-height: 1.2;
-    color: #0F2D40;
+    color: #f9f5ec;
     font-weight: 100;
     font-size: 2.827rem;
     font-size: 1.999rem;
     font-size: 1.414rem;
-    color: #194759;
     margin: 0 0 1.3em 0;
     display: block;
     font-weight: 700;
-    color: #656565; }
+    color: #dfcfa0; }
 
 .header {
   display: flex;
@@ -458,15 +454,14 @@ table {
     font-weight: 400;
     line-height: 1.45;
     font-size: 1rem;
-    color: #282828;
+    color: #ece2c6;
     font-size: 3.998rem;
     line-height: 1.2;
-    color: #0F2D40;
+    color: #f9f5ec;
     font-weight: 100;
     font-size: 2.827rem;
     font-size: 1.999rem;
     font-size: 1.414rem;
-    color: #194759;
     padding: 1rem;
     flex: 1 0 auto;
     margin: 0; }
@@ -484,12 +479,9 @@ table {
 .code-block {
   margin: 0 0 1.3em 0;
   display: block;
-  box-shadow: inset 0 0 10px 0px #BBBBBB;
-  color: #393939;
   padding: 1rem;
   counter-reset: line;
-  box-shadow: inset 0 0 10px 0px #BBBBBB;
-  color: #393939;
+  background-color: #111218;
   padding: 1rem;
   counter-reset: line; }
   .code-block--line-number:before {
@@ -498,10 +490,10 @@ table {
     display: inline-block;
     margin-right: 1rem;
     padding-right: 0.5rem;
-    opacity: 0.4; }
+    opacity: 0.5; }
 
 .section {
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #252836; }
   .section:last-child {
     border-bottom: 0; }
 
@@ -511,12 +503,12 @@ table {
   display: table; }
   .table--heading {
     font-weight: 700;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 2px solid #303345;
     padding: 0.5rem;
-    color: #656565;
+    color: #dfcfa0;
     text-align: left; }
   .table--cell {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #303345;
     padding: 0.5rem; }
   .table--fill {
     padding: 0;
@@ -529,7 +521,7 @@ table {
 .demo {
   margin: 0 0 1.3em 0;
   display: block;
-  box-shadow: inset 0 0 10px 0px #656565;
+  background-color: #252836;
   position: relative; }
   .demo--preview {
     padding: 1rem;
@@ -538,8 +530,7 @@ table {
   .demo--code {
     /* Should use is-inverted */
     box-shadow: none;
-    background-color: #393939;
-    color: #FFFFFF;
+    color: #ece2c6;
     border-radius: 0;
     margin: 0;
     flex: 1 0 auto; }
@@ -547,18 +538,18 @@ table {
     display: block;
     position: absolute;
     border: 0;
-    border-bottom: 3px solid #D8F2F0;
+    border-bottom: 3px solid #b8b331;
     padding: 5px 7px;
     margin: 0;
     right: 3px;
     bottom: 3px;
-    background-color: #3E8C84;
-    color: white; }
+    background-color: #dad675;
+    color: #1b1d27; }
     .demo--button:focus {
       outline: none; }
     .demo--button:hover {
-      background-color: #296B73;
-      border-bottom: 3px solid #3E8C84; }
+      background-color: #b8b331;
+      border-bottom: 3px solid #dad675; }
     .demo--button:active {
       border-bottom: none; }
   .demo.is-horizontal {
@@ -572,38 +563,41 @@ table {
 
 .is-inverted {
   box-shadow: none;
-  background-color: #393939;
-  color: #FFFFFF; }
+  background-color: #ece2c6;
+  color: #1b1d27; }
 
 .is-rounded {
   border-radius: 0.5rem; }
 
-.is-syntax-shade-1 {
-  color: #D8F2F0; }
+.is-syntax-yellow {
+  color: #cfcb4d; }
 
-.is-syntax-shade-2 {
-  color: #3E8C84; }
+.is-syntax-lime {
+  color: #86cf4d; }
 
-.is-syntax-shade-3 {
-  color: #296B73; }
+.is-syntax-green {
+  color: #4dcf62; }
 
-.is-syntax-shade-4 {
-  color: #194759; }
+.is-syntax-aqua {
+  color: #4dcfb0; }
 
-.is-syntax-shade-5 {
-  color: #0F2D40; }
+.is-syntax-azure {
+  color: #4da0cf; }
 
-.is-syntax-grey-1 {
-  color: #e5e5e5; }
+.is-syntax-blue {
+  color: #4d51cf; }
 
-.is-syntax-grey-2 {
-  color: #656565; }
+.is-syntax-violet {
+  color: #964dcf; }
 
-.is-syntax-grey-3 {
-  color: #4e4e4e; }
+.is-syntax-magenta {
+  color: #cf4dba; }
 
-.is-syntax-grey-4 {
-  color: #393939; }
+.is-syntax-red {
+  color: #cf4d6c; }
 
-.is-syntax-grey-5 {
-  color: #282828; }
+.is-syntax-orange {
+  color: #cf7c4d; }
+
+.is-syntax-light {
+  color: #303345; }

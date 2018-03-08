@@ -2,7 +2,7 @@ blockquote,
 q {
   @include font-block-body;
   font-size: $font-size-large-4;
-  color: $shade-2;
+  color: $white-lighter;
   padding: $layout-padding;
   text-align: center;
   display: inline-block;
@@ -11,7 +11,7 @@ q {
 
   &:before {
     content: " ";
-    border-top: 3px solid $grey-1;
+    border-top: 3px solid $blue;
     position: absolute;
     top: 0;
     width: 50%;
@@ -21,7 +21,7 @@ q {
 
   &:after {
     content: " ";
-    border-top: 3px solid $grey-1;
+    border-top: 3px solid $blue;
     position: absolute;
     bottom: 0;
     width: 50%;

@@ -15,7 +15,7 @@
     border-left-width: 2px;
     border-left-style: solid;
     padding-left: 0.5rem;
-    border-left-color: $shade-2;
+    border-left-color: $black-lighter;
   }
 
   // Add indentation to nested lists.
@@ -25,6 +25,6 @@
 
   // Nested links get a different color.
   &--list &--list &--link {
-    border-left-color: $shade-1;
+    border-left-color: $black-light;
   }
 }

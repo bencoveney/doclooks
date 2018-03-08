@@ -1,4 +1,5 @@
 // Variables
+@import "variables/palette";
 @import "variables/colors";
 @import "variables/fonts";
 @import "variables/layout";
@@ -7,6 +8,7 @@
 
 // Base
 @import "base/reset";
+@import "base/body";
 @import "base/code";
 @import "base/font";
 @import "base/heading";

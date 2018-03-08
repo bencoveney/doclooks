@@ -103,9 +103,9 @@ const formatTags = (text) => {
         closingBracket
       ]
     ) => [
-      color("&lt;", "grey-2"),
-      slash ? color(slash, "grey-2") : "",
-      color(tagName, "shade-2"),
+      color("&lt;", "light"),
+      slash ? color(slash, "light") : "",
+      color(tagName, "azure"),
       replaceMultiple(
         tagAttributes,
         /(\w*)(=)(\")([^"]*)(\")/g,
@@ -118,14 +118,14 @@ const formatTags = (text) => {
             closingQuote
           ]
         ) => [
-          color(attributeName, "shade-2"),
-          color(equals, "grey-2"),
-          color(openingQuote, "grey-2"),
-          color(attributeValue, "shade-1"),
-          color(closingQuote, "grey-2")
+          color(attributeName, "aqua"),
+          color(equals, "light"),
+          color(openingQuote, "orange"),
+          color(attributeValue, "orange"),
+          color(closingQuote, "orange")
         ]
       ),
-      color("&gt;", "grey-2")
+      color("&gt;", "light")
     ]
   );
 }

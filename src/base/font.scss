@@ -1,7 +1,3 @@
-body {
-  @include font-body;
-}
-
 p {
   @include font-block-body;
 }
@@ -17,5 +13,5 @@ strong {
 }
 
 mark {
-  background-color: $shade-1;
+  background-color: $black-lighter;
 }

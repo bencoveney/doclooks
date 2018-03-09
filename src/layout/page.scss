@@ -4,6 +4,7 @@
   grid-gap: $layout-padding / 2;
   display: grid;
   grid-template-areas: "header" "content" "sidebar";
+  grid-template-columns: minmax(0%, 1fr);
 }
 
 .l-sidebar-above {
@@ -36,7 +37,7 @@
   @at-root,
   .l-content-left {
     &#page {
-      grid-template-columns: minmax(auto, $page-width - $sidebar-width) $sidebar-width;
+      grid-template-columns: minmax(0%, $page-width - $sidebar-width) $sidebar-width;
       grid-template-areas: "header header" "content sidebar";
     }
 
@@ -48,7 +49,7 @@
 
   .l-content-right {
     &#page {
-      grid-template-columns: $sidebar-width minmax(auto, $page-width - $sidebar-width);
+      grid-template-columns: $sidebar-width minmax(0%, $page-width - $sidebar-width);
       grid-template-areas: "header header" "sidebar content";
     }
 

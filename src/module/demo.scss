@@ -54,6 +54,7 @@ $demo-button-color-other: $yellow-light;
   &.is-horizontal {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: stretch;
   }
 }

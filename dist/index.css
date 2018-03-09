@@ -139,7 +139,8 @@ pre {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   background-color: #111218;
   padding: 1rem;
-  counter-reset: line; }
+  counter-reset: line;
+  overflow-x: auto; }
   pre code {
     padding: 0;
     background-color: transparent; }
@@ -336,7 +337,8 @@ table {
   padding: 0 1.5rem;
   grid-gap: 1.5rem;
   display: grid;
-  grid-template-areas: "header" "content" "sidebar"; }
+  grid-template-areas: "header" "content" "sidebar";
+  grid-template-columns: minmax(0%, 1fr); }
 
 .l-sidebar-above {
   grid-template-areas: "header" "sidebar" "content"; }
@@ -360,13 +362,13 @@ table {
     padding: 0 3rem;
     grid-gap: 3rem; }
   #page, .l-content-left#page {
-    grid-template-columns: minmax(auto, 860px) 300px;
+    grid-template-columns: minmax(0%, 860px) 300px;
     grid-template-areas: "header header" "content sidebar"; }
   #sidebar, .l-content-left #sidebar {
     border-width: 0 0 0 1px;
     padding: 0 0 0 3rem; }
   .l-content-right#page {
-    grid-template-columns: 300px minmax(auto, 860px);
+    grid-template-columns: 300px minmax(0%, 860px);
     grid-template-areas: "header header" "sidebar content"; }
   .l-content-right #sidebar {
     border-width: 0 1px 0 0;
@@ -555,6 +557,7 @@ table {
   .demo.is-horizontal {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: stretch; }
 
 .is-close {

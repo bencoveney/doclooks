@@ -9,6 +9,7 @@ pre {
   background-color: $black-dark;
   padding: $block-padding;
   counter-reset: line;
+  overflow-x: auto;
 
   code {
     // Turn off some of the inline styles.

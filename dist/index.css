@@ -458,7 +458,7 @@ table {
     margin: 0 0 1.3em 0;
     display: block;
     font-weight: 700;
-    color: #dfcfa0; }
+    color: #3187b8; }
 
 .header {
   display: flex;
@@ -518,7 +518,7 @@ table {
     font-weight: 700;
     border-bottom: 2px solid #303345;
     padding: 0.5rem;
-    color: #dfcfa0;
+    color: #e6d8b3;
     text-align: left; }
   .table--cell {
     border-bottom: 1px solid #303345;

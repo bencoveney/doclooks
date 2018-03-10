@@ -57,4 +57,10 @@ $demo-button-color-other: $yellow-light;
     flex-wrap: wrap;
     align-items: stretch;
   }
+
+  &.is-default-color {
+    background-color: $black;
+    color: $white;
+    border: 1px solid $black-lighter;
+  }
 }

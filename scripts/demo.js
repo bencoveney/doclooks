@@ -130,7 +130,7 @@ const formatTags = (text) => {
   );
 }
 
-attachPreview = () => selectDomArray(".demo").forEach(
+attachPreview = () => selectDomArray(".section > .demo").forEach(
   demo => {
     content = demo.querySelector(".demo--preview").innerHTML;
 

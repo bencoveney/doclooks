@@ -55,7 +55,7 @@ const createList = (header, prefix) => {
 const getSafeName = (text) => text.replace(/\W+/g, "-").toLowerCase();
 
 const createJumpList = (tree) => {
-  list = document.querySelector(".jump-list--list");
+  list = document.querySelector("#sidebar .jump-list--list");
   list.innerHTML = tree.map((header) => createList(header, "")).join("");
 };
 

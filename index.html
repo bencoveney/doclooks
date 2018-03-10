@@ -142,17 +142,15 @@
             </div>
           </div>
           <h4>Definition</h4>
-          <div class="demo">
+          <div class="demo is-horizontal">
             <div class="demo--preview">
               <dl>
-                <dt><dfn>Perge porro;</dfn></dt>
-                <dd>Ita relinquet duas, de quibus etiam atque etiam consideret.</dd>
-                <dt><dfn>Efficiens dici potest.</dfn></dt>
-                <dd>Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba.</dd>
-                <dt><dfn>Immo alio genere;</dfn></dt>
-                <dd>Cur igitur easdem res, inquam.</dd>
-                <dt><dfn>Sed nunc, quod agimus;</dfn></dt>
-                <dd>Non est ista, inquam, Piso, magna dissensio.</dd>
+                <dt><dfn>Perge;</dfn></dt>
+                <dd>Ita relinquet duas.</dd>
+                <dt><dfn>Efficiens.</dfn></dt>
+                <dd>Cum id fugiunt.</dd>
+                <dt><dfn>Immo;</dfn></dt>
+                <dd>Cur igitur easdem.</dd>
               </dl>
             </div>
           </div>
@@ -171,6 +169,19 @@
         <section class="section">
           <h2>Modules</h2>
           <p>Modules are re-usable elements that can be used throughout your page.</p>
+          <h3>Header</h3>
+          <p>A page level header with navigation.</p>
+          <div class="demo is-default-color">
+            <div class="demo--preview">
+              <header id="header" class="header">
+                <h2 class="header--name">MySite</h2>
+                <ul class="header--nav">
+                  <li class="header--nav-link"><a href="#">Link</a></li>
+                  <li class="header--nav-link"><a href="#">Another Link</a></li>
+                </ul>
+              </header>
+            </div>
+          </div>
           <h3>Title</h3>
           <p>A title for the article or page. It can optionally include a tagline to offer more description.</p>
           <div class="demo">
@@ -244,6 +255,81 @@
 <pre class="code-block is-rounded"><code>function greet() {
   console.log("Hello World!");
 }</code></pre>
+            </div>
+          </div>
+          <h3>Jump List</h3>
+          <p>A list of links that can be used as navigation.</p>
+          <div class="demo is-horizontal">
+            <div class="demo--preview">
+              <nav class="jump-list">
+                <h2 class="jump-list--heading">Jump To</h2>
+                <ul class="jump-list--list">
+                  <li class="jump-list--item">
+                    <a class="jump-list--link">Page</a>
+                  </li>
+                  <li class="jump-list--item">
+                    <a class="jump-list--link">Section</a>
+                    <ul class="jump-list--list">
+                      <li class="jump-list--item">
+                        <a class="jump-list--link">Subsection</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <h3>Section</h3>
+          <p>Break up the page into sections. Dividing lines will only be placed between subsequent sections.</p>
+          <div class="demo is-default-color">
+            <div class="demo--preview">
+              <section class="section">
+                <h4>First</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+              </section>
+              <section class="section">
+                <h4>Second</h4>
+                <p>Donec odio. Quisque volutpat mattis eros.</p>
+              </section>
+            </div>
+          </div>
+          <h3>Demo</h3>
+          <p>The demo module allows you to display code alongside a preview. You can optionally add a button</p>
+          <div class="demo is-default-color">
+            <div class="demo--preview">
+              <div class="demo">
+                <div class="demo--preview">
+                  A preview of the demo
+                </div>
+                <pre class="demo--code code-block"><code>&lt;p&gt;Lorem Ipsum&lt;/p&gt;</code></pre>
+                <button class="demo--button">Show Demo</button>
+              </div>
+            </div>
+          </div>
+          <h4>Horizontal Layout</h4>
+          <p>Add the <code>.is-horizontal</code> state to lay out the code and preview side-by-side.</p>
+          <div class="demo is-default-color">
+            <div class="demo--preview">
+              <div class="demo is-horizontal">
+                <div class="demo--preview">
+                  A preview of the demo
+                </div>
+                <pre class="demo--code code-block"><code>&lt;p&gt;Lorem Ipsum&lt;/p&gt;</code></pre>
+                <button class="demo--button">Show Demo</button>
+              </div>
+            </div>
+          </div>
+          <h4>Default Colors</h4>
+          <p>If your want to preserve the default theme - or just prefer the border - you can use the default colour for the preview using add the <code>.is-default-color</code> state.</p>
+          <div class="demo">
+            <div class="demo--preview">
+              <div class="demo is-default-color">
+                <div class="demo--preview">
+                  A preview of the demo
+                </div>
+                <pre class="demo--code code-block"><code>&lt;p&gt;Lorem Ipsum&lt;/p&gt;</code></pre>
+                <button class="demo--button">Show Demo</button>
+              </div>
             </div>
           </div>
         </section>

@@ -518,7 +518,7 @@ table {
     vertical-align: top; }
     .table--fill > * {
       margin: 0;
-      height: 100%; }
+      min-height: 100%; }
 
 .demo {
   margin: 0 0 1.3em 0;
@@ -559,6 +559,10 @@ table {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch; }
+  .demo.is-default-color {
+    background-color: #1b1d27;
+    color: #ece2c6;
+    border: 1px solid #303345; }
 
 .is-close {
   margin: 0;

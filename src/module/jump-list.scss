@@ -6,25 +6,45 @@
     @include font-block-heading;
   }
 
-  &--list {
+  ul {
     list-style-type: none;
     padding-left: 0;
   }
 
-  &--link {
-    border-left-width: 2px;
-    border-left-style: solid;
-    padding-left: 0.5rem;
-    border-left-color: $black-lighter;
-  }
-
   // Add indentation to nested lists.
-  &--item > &--list {
+  li > ul {
     padding-left: 1rem;
   }
 
   // Nested links get a different color.
-  &--list &--list &--link {
-    border-left-color: $black-light;
+  ul {
+    a,
+    a:link,
+    a:hover,
+    a:visited,
+    a:active {
+      color: $azure-light;
+    }
+
+    ul {
+      a,
+      a:link,
+      a:hover,
+      a:visited,
+      a:active {
+        color: $azure;
+      }
+
+      ul {
+        a,
+        a:link,
+        a:hover,
+        a:visited,
+        a:active {
+          color: $azure-dark;
+        }
+      }
+    }
   }
+
 }

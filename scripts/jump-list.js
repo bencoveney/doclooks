@@ -38,14 +38,14 @@ const createList = (header, prefix) => {
   let nested = "";
   if (header.content.length > 0) {
     nested = `
-<ul class="jump-list--list">
+<ul>
   ${header.content.map((header) => createList(header, `${currentSafeName}-`)).join("")}
 </ul>`;
   }
 
   return `
-<li class="jump-list--item">
-  <a href="#${currentSafeName}" class="jump-list--link">
+<li>
+  <a href="#${currentSafeName}">
     ${header.element.innerHTML}
   </a>
   ${nested}
@@ -55,7 +55,7 @@ const createList = (header, prefix) => {
 const getSafeName = (text) => text.replace(/\W+/g, "-").toLowerCase();
 
 const createJumpList = (tree) => {
-  list = document.querySelector("#sidebar .jump-list--list");
+  list = document.querySelector("#sidebar.jump-list > ul");
   list.innerHTML = tree.map((header) => createList(header, "")).join("");
 };
 

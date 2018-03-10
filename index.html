@@ -258,23 +258,24 @@
             </div>
           </div>
           <h3>Jump List</h3>
-          <p>A list of links that can be used as navigation.</p>
+          <p>A list of links that can be used as navigation. Nested links have different colours to reinforce the hierarchy. The sizes of different headers can be constrained using <code>.jump-list--heading</code> allowing you to keep your HTML semantically structured.</p>
           <div class="demo is-horizontal">
             <div class="demo--preview">
               <nav class="jump-list">
                 <h2 class="jump-list--heading">Jump To</h2>
-                <ul class="jump-list--list">
-                  <li class="jump-list--item">
-                    <a class="jump-list--link">Page</a>
-                  </li>
-                  <li class="jump-list--item">
-                    <a class="jump-list--link">Section</a>
-                    <ul class="jump-list--list">
-                      <li class="jump-list--item">
-                        <a class="jump-list--link">Subsection</a>
+                <ul>
+                  <li>
+                    <a>Section</a>
+                    <ul>
+                      <li>
+                        <a>Sub-section</a>
+                        <ul>
+                          <li><a>Sub-sub-section</a></li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
+                  <li><a>Page</a></li>
                 </ul>
               </nav>
             </div>
@@ -336,8 +337,7 @@
       </div>
       <nav id="sidebar" class="jump-list">
         <h2 class="jump-list--heading">Jump To</h2>
-        <ul class="jump-list--list">
-        </ul>
+        <ul></ul>
       </nav>
     </div>
   </body>

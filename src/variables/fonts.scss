@@ -3,8 +3,8 @@ $body-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-ser
 $code-font: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace !default;
 
 // Colors.
-$font-color-body: $white !default;
-$font-color-heading: $white-lighter !default;
+$font-color-body: $color-foreground !default;
+$font-color-heading: $color-foreground-lighter !default;
 
 // Sizes.
 $font-size-large-1: 3.998rem !default;

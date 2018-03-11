@@ -1,0 +1,19 @@
+
+
+.split-columns {
+  display: flex;
+
+  > * {
+    flex: 1 0 0;
+
+    margin: 0 $small-block-padding;
+
+    &:first-child {
+      margin: 0 $small-block-padding 0 0;
+    }
+
+    &:last-child {
+      margin: 0 0 0 $small-block-padding;
+    }
+  }
+}

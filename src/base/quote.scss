@@ -2,7 +2,7 @@ blockquote,
 q {
   @include font-block-body;
   font-size: $font-size-large-4;
-  color: $white-lighter;
+  color: $color-foreground-lighter;
   padding: $layout-padding;
   text-align: center;
   display: inline-block;

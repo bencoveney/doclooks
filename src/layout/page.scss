@@ -1,7 +1,7 @@
 #page {
   justify-content: center;
-  padding: 0 $layout-padding / 2;
-  grid-gap: $layout-padding / 2;
+  padding: 0 $small-layout-padding / 2;
+  grid-gap: $small-layout-padding / 2;
   display: grid;
   grid-template-areas: "header" "content" "sidebar";
   grid-template-columns: minmax(0%, 1fr);
@@ -14,7 +14,7 @@
 #header {
   width: 100%;
   grid-area: header;
-  background-color: $black-light;
+  background-color: $color-background-light;
 }
 
 #content {
@@ -23,14 +23,14 @@
 
 #sidebar {
   border-style: solid;
-  border-color: $black-lighter;
+  border-color: $color-background-lighter;
   grid-area: sidebar;
   align-self: start;
 }
 
 @media screen and (min-width: $breakpoint) {
   #page {
-    padding: 0 $layout-padding;
+    padding: 0 $layout-padding $layout-padding $layout-padding;
     grid-gap: $layout-padding;
   }
 

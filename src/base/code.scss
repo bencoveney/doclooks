@@ -1,12 +1,12 @@
 code {
   font-family: $code-font;
   padding: 0.1em;
-  background-color: $black-light;
+  background-color: $color-background-light;
 }
 
 pre {
   font-family: $code-font;
-  background-color: $black-dark;
+  background-color: $color-background-dark;
   padding: $block-padding;
   counter-reset: line;
   overflow-x: auto;

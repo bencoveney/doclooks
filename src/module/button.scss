@@ -1,0 +1,26 @@
+$button-border-bottom: 3px;
+$button-padding: 5px 7px;
+
+$button-color-main: $yellow-dark;
+$button-color-other: $yellow-light;
+
+.button {
+  display: block;
+  border-bottom: $button-border-bottom solid $button-color-main;
+  padding: $button-padding;
+  background-color: $button-color-other;
+  color: $black;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $button-color-main;
+    border-bottom: $button-border-bottom solid $button-color-other;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+}

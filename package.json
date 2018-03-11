@@ -2,10 +2,10 @@
   "name": "doclooks",
   "version": "0.0.1",
   "description": "Documentation styles",
-  "main": "index.js",
+  "main": "dist",
   "scripts": {
     "dev": "npm run test -- --watch",
-    "test": "node-sass src/index.scss dist/index.css"
+    "test": "node-sass -o dist src/main"
   },
   "repository": {
     "type": "git",

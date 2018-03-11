@@ -1,0 +1,12 @@
+// For the light theme the colors (including dark/light) are switched.
+$color-background-darker: $white-lighter;
+$color-background-dark: $white-light;
+$color-background: $white;
+$color-background-light: $white-dark;
+$color-background-lighter: $white-darker;
+
+$color-foreground-darker: $black-lighter;
+$color-foreground-dark: $black-light;
+$color-foreground: $black;
+$color-foreground-light: $black-dark;
+$color-foreground-lighter: $black-darker;

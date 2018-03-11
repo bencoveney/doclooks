@@ -45,18 +45,17 @@ const demoContent = text => `<html>${head}<body>${text}</body></html>`;
 // Creates a button that will show a standalone preview.
 const createPreviewButton = content => {
   const button = document.createElement("button");
-  button.classList.add("demo--button");
+  button.classList.add("demo--button", "button");
   button.appendChild(
     document.createTextNode("Show Demo")
   );
 
-  button
-    .addEventListener(
-      "click",
-      () => window.open().document.write(
-        demoContent(content)
-      )
-    );
+  button.addEventListener(
+    "click",
+    () => window.open().document.write(
+      demoContent(content)
+    )
+  );
 
   return button;
 }

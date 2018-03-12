@@ -1,26 +1,48 @@
 $button-border-bottom: 3px;
 $button-padding: 5px 7px;
 
-$button-color-main: $yellow-dark;
-$button-color-other: $yellow-light;
+@mixin button-state($name, $background, $border, $color) {
+  &--#{$name} {
+    border-color: $border;
+    background-color: $background;
+    color: $color;
+
+    &:hover {
+      border-bottom-color: $background;
+      background-color: $border;
+    }
+  }
+}
 
 .button {
-  display: block;
-  border-bottom: $button-border-bottom solid $button-color-main;
+  display: inline-block;
+  border-bottom: $button-border-bottom solid $state-primary-border;
   padding: $button-padding;
-  background-color: $button-color-other;
-  color: $black;
+  background-color: $state-primary-background;
+  color: $state-primary-color;
 
   &:focus {
     outline: none;
   }
 
   &:hover {
-    background-color: $button-color-main;
-    border-bottom: $button-border-bottom solid $button-color-other;
+    background-color: $state-primary-border;
+    border-bottom: $button-border-bottom solid $state-primary-background;
   }
 
   &:active {
     border-bottom: none;
+    margin-top: $button-border-bottom;
   }
+
+  &.is-full-width {
+    display: block;
+    width: 100%;
+  }
+
+  @include button-state("primary", $state-primary-background, $state-primary-border, $state-primary-color);
+  @include button-state("inverted", $state-inverted-background, $state-inverted-border, $state-inverted-color);
+  @include button-state("success", $state-success-background, $state-success-border, $state-success-color);
+  @include button-state("danger", $state-danger-background, $state-danger-border, $state-danger-color);
+  @include button-state("warning", $state-warning-background, $state-warning-border, $state-warning-color);
 }

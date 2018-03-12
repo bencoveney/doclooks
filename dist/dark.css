@@ -375,18 +375,57 @@ table {
     padding: 0 3rem 0 0; } }
 
 .button {
-  display: block;
-  border-bottom: 3px solid #b8b331;
+  display: inline-block;
+  border-bottom: 3px solid #3187b8;
   padding: 5px 7px;
-  background-color: #dad675;
+  background-color: #75b5da;
   color: #1b1d27; }
   .button:focus {
     outline: none; }
   .button:hover {
-    background-color: #b8b331;
-    border-bottom: 3px solid #dad675; }
+    background-color: #3187b8;
+    border-bottom: 3px solid #75b5da; }
   .button:active {
-    border-bottom: none; }
+    border-bottom: none;
+    margin-top: 3px; }
+  .button.is-full-width {
+    display: block;
+    width: 100%; }
+  .button--primary {
+    border-color: #3187b8;
+    background-color: #75b5da;
+    color: #1b1d27; }
+    .button--primary:hover {
+      border-bottom-color: #75b5da;
+      background-color: #3187b8; }
+  .button--inverted {
+    border-color: #dfcfa0;
+    background-color: #f9f5ec;
+    color: #1b1d27; }
+    .button--inverted:hover {
+      border-bottom-color: #f9f5ec;
+      background-color: #dfcfa0; }
+  .button--success {
+    border-color: #31b847;
+    background-color: #75da85;
+    color: #1b1d27; }
+    .button--success:hover {
+      border-bottom-color: #75da85;
+      background-color: #31b847; }
+  .button--danger {
+    border-color: #b83151;
+    background-color: #da758d;
+    color: #1b1d27; }
+    .button--danger:hover {
+      border-bottom-color: #da758d;
+      background-color: #b83151; }
+  .button--warning {
+    border-color: #b8b331;
+    background-color: #dad675;
+    color: #1b1d27; }
+    .button--warning:hover {
+      border-bottom-color: #dad675;
+      background-color: #b8b331; }
 
 .card {
   background-color: #252836;

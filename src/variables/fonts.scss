@@ -17,6 +17,7 @@ $font-size-body: 1rem !default;
 $font-size-small: 0.707rem !default;
 
 // Weights.
+$font-weight-heading: 100 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 
@@ -51,7 +52,7 @@ $text-margin-heading: $font-size-large-4 0 0.5em 0 !default;
   font-size: $font-size-large-1;
   line-height: $line-height-heading;
   color: $font-color-heading;
-  font-weight: 100;
+  font-weight: $font-weight-heading;
 }
 
 @mixin font-h2 {

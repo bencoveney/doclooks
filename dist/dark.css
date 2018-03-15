@@ -546,6 +546,60 @@ table {
   .jump-list ul ul ul a:active {
     color: #3187b8; }
 
+.log {
+  margin: 1em 1em 1em 2em;
+  border-left: 3px solid #252836;
+  padding: 1em 0; }
+  .log--row {
+    margin-left: -1em;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 2em; }
+    .log--row:last-child {
+      margin-bottom: 0; }
+  .log--icon {
+    flex: 0 0 auto;
+    order: 0;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    text-align: center;
+    background-color: #303345;
+    margin-right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .log--content {
+    flex: 1 1 auto;
+    order: 1; }
+  .log--heading {
+    font-weight: 100;
+    display: block;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid #252836;
+    margin-bottom: 0.2em; }
+  .log--aside {
+    flex: 0 0 auto;
+    order: 2;
+    display: block;
+    margin-left: 1em; }
+  .log .is-primary {
+    background-color: #75b5da;
+    color: #060709; }
+  .log .is-inverted {
+    background-color: #f9f5ec;
+    color: #060709; }
+  .log .is-success {
+    background-color: #75da85;
+    color: #060709; }
+  .log .is-danger {
+    background-color: #da758d;
+    color: #060709; }
+  .log .is-warning {
+    background-color: #dad675;
+    color: #060709; }
+
 .section {
   border-bottom: 1px solid #252836; }
   .section:last-child {

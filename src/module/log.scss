@@ -1,0 +1,67 @@
+@mixin row-state($name, $background) {
+  .is-#{$name} {
+    background-color: $background;
+    color: $color-background-darker;
+  }
+}
+
+.log {
+  margin: 1em 1em 1em 2em;
+  border-left: 3px solid $color-background-light;
+  padding: 1em 0;
+
+  &--row {
+    margin-left: -1em;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    margin-bottom: 2em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--icon {
+    flex: 0 0 auto;
+    order: 0;
+
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    text-align: center;
+    background-color: $color-background-lighter;
+    margin-right: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--content {
+    flex: 1 1 auto;
+    order: 1;
+  }
+
+  &--heading {
+    font-weight: $font-weight-heading;
+    display: block;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid $color-background-light;
+    margin-bottom: 0.2em;
+  }
+
+  &--aside {
+    flex: 0 0 auto;
+    order: 2;
+
+    display: block;
+    margin-left: 1em;
+  }
+
+  @include row-state("primary", $state-primary-background);
+  @include row-state("inverted", $state-inverted-background);
+  @include row-state("success", $state-success-background);
+  @include row-state("danger", $state-danger-background);
+  @include row-state("warning", $state-warning-background);
+}

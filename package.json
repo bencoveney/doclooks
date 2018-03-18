@@ -4,10 +4,11 @@
   "description": "Documentation styles",
   "main": "dist",
   "scripts": {
-    "dev": "npm run test -- --watch",
-    "test": "node-sass -o dist src/main",
-    "docs-build": "npm run --prefix docs build",
-    "docs-develop": "npm run --prefix docs develop"
+    "build": "node-sass -o dist src/main",
+    "develop": "npm run build -- --watch",
+    "docs-build": "npm run --prefix gatsby build",
+    "docs-develop": "npm run --prefix gatsby develop",
+    "test": "npm run build && npm run docs-build"
   },
   "repository": {
     "type": "git",

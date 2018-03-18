@@ -5,7 +5,9 @@
   "main": "dist",
   "scripts": {
     "dev": "npm run test -- --watch",
-    "test": "node-sass -o dist src/main"
+    "test": "node-sass -o dist src/main",
+    "docs-build": "npm run --prefix docs build",
+    "docs-develop": "npm run --prefix docs develop"
   },
   "repository": {
     "type": "git",

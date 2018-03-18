@@ -1,0 +1,21 @@
+{
+  "name": "doclooks-docs",
+  "description": "DocLooks Documentation",
+  "version": "1.0.0",
+  "author": "Ben Coveney",
+  "dependencies": {
+    "gatsby": "^1.9.236",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

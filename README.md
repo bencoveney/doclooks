@@ -26,3 +26,4 @@ Some examples of beautiful documentation and useful components.
 - [GitBook](https://www.gitbook.com/)
 - [GitHub Pages Themes](https://pages.github.com/themes/)
 - [Read The Docs](https://readthedocs.org/)
+- [Stripe](https://stripe.com/docs)
